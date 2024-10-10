@@ -32,7 +32,7 @@ public class ProdutoApplication {
             produtoController.adicionarProdutoLista(produto2);
 
             Produto produto3 = new Produto();
-            produto3.setNome("Produto 3");
+            produto3.setNome("Boné");
             produto3.setPreco(30.0);
             produtoController.adicionarProdutoLista(produto3);
 
