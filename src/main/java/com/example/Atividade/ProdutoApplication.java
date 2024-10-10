@@ -22,13 +22,13 @@ public class ProdutoApplication {
 
             // Criando e adicionando produtos
             Produto produto1 = new Produto();
-            produto1.setNome("Produto 1");
-            produto1.setPreco(10.0);
+            produto1.setNome("Camisa");
+            produto1.setPreco(45.0);
             produtoController.adicionarProdutoLista(produto1);
 
             Produto produto2 = new Produto();
-            produto2.setNome("Produto 2");
-            produto2.setPreco(20.0);
+            produto2.setNome("Calça");
+            produto2.setPreco(150.0);
             produtoController.adicionarProdutoLista(produto2);
 
             Produto produto3 = new Produto();
@@ -39,7 +39,7 @@ public class ProdutoApplication {
             // Listando todos os produtos
             System.out.println("Lista de Produtos:");
             produtoController.listaProduto().forEach(produto ->
-                    System.out.println(produto.getId() + ": " + produto.getNome() + " - " + produto.getPreco())
+                    System.out.println(produto.getId() + ": " + produto.getNome() + " - R$" + produto.getPreco())
             );
         };
     }
